@@ -138,8 +138,8 @@ int main(){
 		sf::Event event;
 		while(window.pollEvent(event)){
 			if(event.type == sf::Event::Closed){
-			// Close window button clicked.
-			window.close();
+				// Close window button clicked.
+				window.close();
 			}
 		}
 		window.clear(sf::Color::Black);
