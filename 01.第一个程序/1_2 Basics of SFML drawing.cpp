@@ -3,7 +3,7 @@
 int main(){
 	sf::RenderWindow window(sf::VideoMode(640,480),"Rendering the rectangle.");
 
-    // Creating our shape.
+	// Creating our shape.
 	sf::RectangleShape rectangle(sf::Vector2f(128.0f,128.0f));
 	rectangle.setFillColor(sf::Color::Red);
 	rectangle.setPosition(320,240);
