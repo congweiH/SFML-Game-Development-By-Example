@@ -9,7 +9,7 @@ int main(){
 	rectangle.setPosition(320,240);
 	rectangle.setOrigin(rectangle.getSize().x / 2, rectangle.getSize().y / 2);
 
-    while(window.isOpen()){
+	while(window.isOpen()){
 		sf::Event event;
 		while(window.pollEvent(event)){
 			if(event.type == sf::Event::Closed){

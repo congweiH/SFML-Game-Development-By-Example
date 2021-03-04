@@ -1,14 +1,14 @@
 #include <SFML/Graphics.hpp>
 
 int main(){
-	sf::RenderWindow window(sf::VideoMode(640,480),"Bouncing mushroom.");
+    sf::RenderWindow window(sf::VideoMode(640,480),"Bouncing mushroom.");
 
     sf::Texture mushroomTexture;
-	mushroomTexture.loadFromFile("Mushroom.png");
-	sf::Sprite mushroom(mushroomTexture);
-	sf::Vector2u size = mushroomTexture.getSize();
-	mushroom.setOrigin(size.x / 2, size.y / 2);
-	sf::Vector2f increment(0.4f, 0.4f);
+    mushroomTexture.loadFromFile("Mushroom.png");
+    sf::Sprite mushroom(mushroomTexture);
+    sf::Vector2u size = mushroomTexture.getSize();
+    mushroom.setOrigin(size.x / 2, size.y / 2);
+    sf::Vector2f increment(0.4f, 0.4f);
 
     while(window.isOpen()){
         sf::Event event;
@@ -32,6 +32,6 @@ int main(){
         window.clear(sf::Color(16,16,16,255)); // Dark gray.
         window.draw(mushroom); // Drawing our sprite.
         window.display();
-	}
+    }
     return 0;
 }
